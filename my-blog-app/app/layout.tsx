@@ -41,7 +41,7 @@ export default function RootLayout({
              {children}
         </main>
         <footer className="bg-gray-800 text-white p-4 text-center" >
-<p>&copy; 2024 My Blog App. All rights reserved.</p>
+<p>&copy; 2025 My Blog App. All rights reserved.</p>
         </footer>
         </div>
       </body>
