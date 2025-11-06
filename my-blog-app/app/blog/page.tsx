@@ -1,4 +1,4 @@
-export const dynamic = "auto"; 
+export const dynamic = "force-static";
 
 interface Post {
   id: number;
@@ -8,28 +8,16 @@ interface Post {
 
 async function getPosts(): Promise<Post[]> {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-
+  
   if (!res.ok) {
-    throw new Error(`HTTP error! Status: ${res.status}`);
+    throw new Error(`Failed to fetch posts: ${res.status}`);
   }
-
   const posts: Post[] = await res.json();
   return posts.slice(0, 10);
 }
 
 export default async function Blog() {
-  let posts: Post[] = [];
-
-  try {
-    posts = await getPosts();
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    return (
-      <div className="text-center py-8">
-        <p className="text-sm text-gray-500 mt-2">Error: {message}</p>
-      </div>
-    );
-  }
+  const posts = await getPosts();
 
   return (
     <div>
