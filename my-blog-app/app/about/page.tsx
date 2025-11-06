@@ -21,7 +21,13 @@ export default async function SSRpage() {
         </div>
       </div>
     );
-  } catch (error) {
-    return <div>Error: {error.message}</div>;
+  } catch (error: unknown) {
+    let message = "Unknown error";
+    if (error instanceof Error) {
+      message = error.message;
+    } else if (typeof error === "string") {
+      message = error;
+    }
+    return <div>Error: {message}</div>;
   }
 }
