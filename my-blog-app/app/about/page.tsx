@@ -2,7 +2,9 @@ export const dynamic = "force-dynamic";
 
 export default async function SSRpage() {
   try {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users/1', { cache: "no-store" });
+    const res = await fetch('https://jsonplaceholder.typicode.com/users/1', {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
@@ -22,12 +24,12 @@ export default async function SSRpage() {
       </div>
     );
   } catch (error: unknown) {
-    let message = "Unknown error";
-    if (error instanceof Error) {
-      message = error.message;
-    } else if (typeof error === "string") {
-      message = error;
-    }
-    return <div>Error: {message}</div>;
+    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+    return (
+      <div>
+        <h1 className="text-3xl font-bold mb-4 text-red-600">Error</h1>
+        <p>{errorMessage}</p>
+      </div>
+    );
   }
 }
