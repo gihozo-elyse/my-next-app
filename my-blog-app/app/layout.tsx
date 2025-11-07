@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body  className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="min-h-screen flex flex-col">
-          <header className="bg-yellow-700 text-white p-4">
+          <header className="bg-yellow-700 text-white p-4 fixed top-0 left-0 right-0 z-50">
             <nav className="container mx-auto">
               <ul className="flex space-x-6">
                 <li><a href="/" className="hover:underline">Home</a></li>
@@ -40,7 +40,7 @@ export default function RootLayout({
       
              {children}
         </main>
-        <footer className="bg-gray-800 text-white p-4 text-center" >
+        <footer className="bg-gray-800 text-white p-4 text-center " >
 <p>&copy; 2025 My Blog App. All rights reserved.</p>
         </footer>
         </div>
