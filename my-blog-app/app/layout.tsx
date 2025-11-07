@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from 'next/link'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -29,9 +30,9 @@ export default function RootLayout({
           <header className="bg-yellow-700 text-white p-4 fixed top-0 left-0 right-0 z-50">
             <nav className="container mx-auto">
               <ul className="flex space-x-6">
-                <li><link href="/" className="hover:underline">Home</link></li>
-                <li><link href="/about" className="hover:underline">About</link></li>
-                <li><link href="/blog" className="hover:underline">Blog</link></li>
+                <li><Link href="/" className="hover:underline">Home</Link></li>
+                <li><Link href="/about" className="hover:underline">About</Link></li>
+                <li><Link href="/blog" className="hover:underline">Blog</Link></li>
                 </ul>
             </nav>
           </header>

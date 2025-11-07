@@ -1,3 +1,5 @@
+
+import Link from 'next/link'
 async function getPost(id: string) {
   try {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
@@ -31,9 +33,9 @@ export default async function BlogDetail({ params }: { params: { id: string } })
     return (
       <div>
         <div className="mb-6">
-          <link href="/blog" className="text-blue-600 hover:underline mb-4 inline-block">
+          <Link href="/blog" className="text-blue-600 hover:underline mb-4 inline-block">
             ← Back to all posts
-          </link>
+          </Link>
         </div>
         
         <div className="bg-red-50 border border-red-200 rounded-lg p-8 text-center">
@@ -48,9 +50,9 @@ export default async function BlogDetail({ params }: { params: { id: string } })
   return (
     <div>
       <div className="mb-6">
-        <link href="/blog" className="text-blue-600 hover:underline mb-4 inline-block">
+        <Link href="/blog" className="text-blue-600 hover:underline mb-4 inline-block">
           ← Back to all posts
-        </link>
+        </Link>
       </div>
       
       <article className="bg-white p-8 rounded-lg shadow-lg">
