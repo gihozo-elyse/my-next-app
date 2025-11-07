@@ -29,13 +29,13 @@ export default function RootLayout({
           <header className="bg-yellow-700 text-white p-4 fixed top-0 left-0 right-0 z-50">
             <nav className="container mx-auto">
               <ul className="flex space-x-6">
-                <li><a href="/" className="hover:underline">Home</a></li>
-                <li><a href="/about" className="hover:underline">About</a></li>
-                <li><a href="/blog" className="hover:underline">Blog</a></li>
+                <li><link href="/" className="hover:underline">Home</link></li>
+                <li><link href="/about" className="hover:underline">About</link></li>
+                <li><link href="/blog" className="hover:underline">Blog</link></li>
                 </ul>
             </nav>
           </header>
-          <main className="flex-grow container mx-auto p-4">
+          <main className="flex-grow' container mx-auto p-4">
                 
       
              {children}

@@ -12,44 +12,44 @@ export default function BlogLayout({
             <h3 className="font-bold text-lg mb-4 text-gray-800">Blog Categories</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/blog?category=tech" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=tech" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Technology
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=lifestyle" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=lifestyle" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Lifestyle
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=education" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=education" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Education
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=travel" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=travel" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Travel
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=food" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=food" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Food
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=health" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=health" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Health
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=business" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=business" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Business
-                </a>
+                </link>
               </li>
               <li>
-                <a href="/blog?category=entertainment" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
+                <link href="/blog?category=entertainment" className="text-gray-50 hover:underline block py-2 px-3 rounded hover:bg-blue-200 transition-colors">
                    Entertainment
-                </a>
+                </link>
               </li>
             </ul>
           </div>
