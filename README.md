@@ -1,14 +1,14 @@
-# 📝 My Personal Blog
+#  My Personal Blog
 
 A modern blog built with Next.js, featuring different rendering techniques for optimal performance and user experience.
 
-## 🚀 Live Demo
-[View Live Demo]()
+##  Live Demo
+[View Live Demo](https://my-next-app-psi-self.vercel.app/)
 
-## 🖼️ Screenshots
+##  Screenshots
 
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 14.6.0 or later
@@ -62,6 +62,16 @@ Feel free to submit issues and enhancement requests.
 
 ##  License
 This project is licensed under the MIT License.
+
+---
+
+## ⚙️ Project Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/my-blog-app.git
+cd my-blog-app
+
 
 
 
