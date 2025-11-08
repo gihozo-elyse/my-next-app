@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from 'next/link'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeToggle from './components/ThemeToggle'; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,25 +26,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body  className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors`}>
         <div className="min-h-screen flex flex-col">
-          <header className="bg-yellow-700 text-white p-4 fixed top-0 left-0 right-0 z-50">
-            <nav className="container mx-auto">
+          <header className="bg-yellow-700 dark:bg-yellow-800 text-white p-4 fixed top-0 left-0 right-0 z-50">
+            <nav className="container mx-auto flex justify-between items-center">
               <ul className="flex space-x-6">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
                 <li><Link href="/about" className="hover:underline">About</Link></li>
                 <li><Link href="/blog" className="hover:underline">Blog</Link></li>
-                </ul>
+              </ul>
+              <ThemeToggle />
             </nav>
           </header>
-          <main className="flex-grow' container mx-auto p-4">
-                
-      
-             {children}
-        </main>
-        <footer className="bg-gray-800 text-white p-4 text-center " >
-<p>&copy; 2025 My Blog App. All rights reserved.</p>
-        </footer>
+          <main className="flex-grow container mx-auto p-4 pt-16">
+            {children}
+          </main>
+          <footer className="bg-gray-800 dark:bg-gray-900 text-white p-4 text-center">
+            <p>&copy; 2025 My Blog App. All rights reserved.</p>
+          </footer>
         </div>
       </body>
     </html>
